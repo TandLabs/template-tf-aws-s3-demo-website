@@ -106,5 +106,5 @@ resource "aws_s3_object" "copy_content" {
 
 
 module "website_s3_bucket" {
-  source = "https://github.com/stackguardian/deployments"
+  source = "git::https://github.com/stackguardian/deployments"
 }
