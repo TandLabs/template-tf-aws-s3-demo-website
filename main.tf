@@ -106,5 +106,5 @@ resource "aws_s3_object" "copy_content" {
 
 
 module "website_s3_bucket" {
-  source = "git::https://rixhieloomis@bitbucket.org/richardloomis3/aws.git"
-}
+  source = "bitbucket.org/richardloomis3/aws.git"
+  }
