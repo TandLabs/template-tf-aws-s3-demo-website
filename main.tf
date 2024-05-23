@@ -106,11 +106,6 @@ resource "aws_s3_object" "copy_content" {
 
 
 module "website_s3_bucket" {
-  source = "git::https://github.com/StackGuardian/deployments"
+  source = "git::https://richardloomis@dev.azure.com/richardloomis/stackguardian/_git/stackguardian"
 }
 # module "website_s3_bucket" {
-#   source = "git::https://rixhieloomis@bitbucket.org/richardloomis3/aws.git"
-# }
-# module "website_s3_bucket" {
-#   source = "git::https://rixhieloomis@bitbucket.org/richardloomis3/aws.git"
-# }
