@@ -105,12 +105,12 @@ resource "aws_s3_object" "copy_content" {
 }
 
 
-module "website_s3_bucket" {
-  source = "git::https://github.com/StackGuardian/deployments"
-}
 # module "website_s3_bucket" {
-#   source = "git::https://rixhieloomis@bitbucket.org/richardloomis3/aws.git"
+#   source = "git::https://github.com/StackGuardian/deployments"
 # }
+module "website_s3_bucket" {
+  source = "git::https://rixhieloomis@bitbucket.org/richardloomis3/aws.git"
+}
 # module "website_s3_bucket" {
 #   source = "git::https://rixhieloomis@bitbucket.org/richardloomis3/aws.git"
 # }
