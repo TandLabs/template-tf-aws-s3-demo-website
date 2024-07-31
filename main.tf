@@ -5,6 +5,10 @@ resource "random_pet" "random" {
 locals {
   bucket_name = "stackguardian-${random_pet.random.id}"
 }
+module "storage_ref" {
+  source = "git@github.com:StackGuardian/terraform-aws-ec2-instance.git"
+}
+
 
 resource "aws_s3_bucket" "s3_bucket" {
   bucket        = local.bucket_name
